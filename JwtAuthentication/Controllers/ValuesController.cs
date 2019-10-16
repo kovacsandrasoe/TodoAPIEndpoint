@@ -55,6 +55,7 @@ namespace JwtAuthentication.Controllers
             var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             var myself = _userManager.GetUserAsync(this.User);
             return userId;
+            //
         }
 
         // POST api/values
